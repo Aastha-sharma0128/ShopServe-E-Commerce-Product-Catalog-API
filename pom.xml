@@ -13,27 +13,39 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>shopserve</name>
     <description>ShopServe Spring Boot Application</description>
+=======
+        <version>3.2.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.example</groupId>
+    <artifactId>secureapi</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>secureapi</name>
+    <description>Secure API with Spring Boot and JWT</description>
+ 8fe3461cd93d0ac22a9e16f480a72248ff9057cd
     <properties>
         <java.version>17</java.version>
     </properties>
     <dependencies>
-        <!-- Spring Web -->
+
+=======
+        <!-- Spring Boot Starters -->
+ 8fe3461cd93d0ac22a9e16f480a72248ff9057cd
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        
-        <!-- Spring Data JPA -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        
-        <!-- Spring Security -->
+ 8fe3461cd93d0ac22a9e16f480a72248ff9057cd
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
         
         <!-- H2 Database -->
         <dependency>
@@ -42,6 +54,7 @@
             <scope>runtime</scope>
         </dependency>
         
+
         <!-- Spring Boot DevTools -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -64,13 +77,34 @@
         </dependency>
         
         <!-- Spring Boot Starter Test -->
+
+        <!-- JJWT (JSON Web Token) -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+            <version>0.12.3</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-impl</artifactId>
+            <version>0.12.3</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId>
+            <version>0.12.3</version>
+            <scope>runtime</scope>
+        </dependency>
+        
+        <!-- Spring Boot Test -->
+8fe3461cd93d0ac22a9e16f480a72248ff9057cd
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        
-        <!-- Spring Security Test -->
+
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
