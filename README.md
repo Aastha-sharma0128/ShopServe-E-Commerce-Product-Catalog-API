@@ -45,6 +45,4 @@ shopserve/
 └── resources/
 ├── application.yml
 
-yaml
-Copy
-Edit
+
